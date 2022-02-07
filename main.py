@@ -111,7 +111,7 @@ class Main(object):
         cur = conn.cursor()
         for res in data:
             for index in range(len(res)):
-                if index == 4 or index == 5:
+                if index == 3 or index == 4:
                     continue
                 res[index] = '"' + res[index] + '"'
             sql = '''
